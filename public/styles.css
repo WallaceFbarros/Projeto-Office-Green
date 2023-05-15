@@ -61,7 +61,7 @@ body {
   width: 100%;
 }
 
-/* :root {
+/* cores usadas {
   --PrimaryColor: hsl(94, 59%, 35%);
   --HoverColor: #bdf094;
   --paleGreen: hsl(96, 75%, 89%);
@@ -72,13 +72,6 @@ body {
   --greyText: rgb(190, 190, 190);
   --inputColor: hsl(330, 12%, 97%);
 
-  --biggestFontSize: 2.5rem;
-  --h1FonteSize: 1.5rem;
-  --h2FonteSize: 1.25rem;
-  --h3FontSize: 1rem;
-  --normalFontSize: 0.938rem;
-  --smallFontSize: 0.813rem;
-  --smallestFontSize: 0.75rem;
 } */
 
 img {
@@ -170,8 +163,7 @@ body {
   color: hsl(95, 34%, 38%);
 }
 
-#hero h2::after {
-  content: "Você!";
+.voceVerde {
   font-style: italic;
   color: hsl(95, 34%, 38%);
 }
@@ -540,8 +532,128 @@ footer .copyright {
   text-align: center;
 }
 
-@media (max-width: 799px) {
+#page-header {
+  background-image: url("img/banner/banner.png");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
 
+#page-header h2,
+#page-header p {
+  color: #ffffff;
+}
+
+#trocadePagina {
+  text-align: center;
+}
+
+#trocadePagina a {
+  text-decoration: none;
+  background-color: #9bda8c;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+#pagination a i {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#detalhesProduto {
+  display: flex;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+#detalhesProduto .umProdutoImg {
+  width: 32%;
+  margin-right: 20px;
+}
+
+.imagensPequenas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#detalhesProduto .umProdutoDetalhe {
+  width: 50%;
+  padding-top: 30px;
+}
+
+#detalhesProduto .umProdutoDetalhe h4 {
+  padding: 40px 0 20px 0;
+}
+
+#detalhesProduto .umProdutoDetalhe h2 {
+  font-size: 20px;
+}
+
+#detalhesProduto .umProdutoDetalhe select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+#detalhesProduto .umProdutoDetalhe input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#detalhesProduto .umProdutoDetalhe button {
+  background: #9bda8c;
+  color: #ffffff;
+}
+
+#detalhesProduto .umProdutoDetalhe button:hover {
+  background-color: hsl(94, 59%, 35%);
+  color: white;
+}
+
+#detalhesProduto .umProdutoDetalhe input:focus {
+  outline: none;
+}
+
+#detalhesProduto .umProdutoDetalhe span {
+  line-height: 25px;
+}
+
+#page-header.sobre-header {
+  background-image: url("img/banner/banner3.png");
+}
+
+#about-head {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+#about-head img {
+  width: 30%;
+  height: auto;
+}
+
+#about-head div {
+  padding-left: 40px;
+  display: block;
+}
+
+@media (max-width: 799px) {
   .section-p1 {
     padding: 40px 40px;
   }
@@ -583,13 +695,12 @@ footer .copyright {
     display: initial;
     position: absolute;
     top: 30px;
-    left 30px;
     color: #87cf6a;
     font-size: 24px;
   }
 
-  #lg-bag{
-    display:none;
+  #lg-bag {
+    display: none;
   }
 
   #hero {
@@ -643,15 +754,33 @@ footer .copyright {
 
   #newsletter {
     height: 100%;
-}
+  }
 
   #newsletter .form {
     width: 70%;
   }
+
+  /* página sobre nós */
+
+  #page-header.sobre-header {
+    height: 30%;
+  }
+
+  #about-head {
+    flex-direction: column;
+  }
+
+  #about-head img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #about-head div {
+    padding-left: 0px;
+  }
 }
 
 @media (max-width: 477px) {
-
   .section-p1 {
     padding: 20px;
   }
@@ -702,5 +831,36 @@ footer .copyright {
 
   #newsletter .form {
     width: 100%;
+  }
+
+  /* página para um produto */
+
+  #detalhesProduto {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #detalhesProduto .umProdutoImg {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  #detalhesProduto .umProdutoDetalhe {
+    width: 100%;
+  }
+
+  /* página sobre nós */
+
+  #about-head {
+    flex-direction: column;
+  }
+
+  #about-head img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #about-head div {
+    padding-left: 0px;
   }
 }
