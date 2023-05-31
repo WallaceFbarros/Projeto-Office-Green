@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Office Green</title>
+    <link rel="icon" href="img/logo.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <section id="header">
+      <a href="index.html"
+        ><img src="img/logo.png" class="logo" alt="" width="200" height="100" />
+      </a>
+
+      <div>
+        <u1 id="navbar">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li id="lg-bag">
+            <a class="active" href="carrinho.html"
+              ><i class="bx bx-shopping-bag" style="color: #87cf6a"></i
+            ></a>
+          </li>
+          <li><a href="login.html">Log In</a></li>
+          <li><a href="sign.html">Sign In</a></li>
+          <a href="#" id="close"><i class="far fa-times"></i></a>
+        </u1>
+      </div>
+      <div id="mobile">
+        <a href="carrinho.html"
+          ><i class="bx bx-shopping-bag" style="color: #87cf6a"></i
+        ></a>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </section>
+
+    <section id="carrinho" class="section-p1">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>Remover</td>
+            <td>Imagem</td>
+            <td>Produto</td>
+            <td>Preço</td>
+            <td>Quantidade</td>
+            <td>SubTotal</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="#"><i class="far fa-times-circle"></i></a>
+            </td>
+            <td><img src="img/products/chestnuts.png" alt="" /></td>
+            <td>Chestnuts</td>
+            <td>R$35,50</td>
+            <td><input type="number" value="1" /></td>
+            <td>R$35,50</td>
+          </tr>
+          <td>
+            <a href="#"><i class="far fa-times-circle"></i></a>
+          </td>
+          <td><img src="img/products/Crassula.png" alt="" /></td>
+          <td>Crassula</td>
+          <td>R$40,00</td>
+          <td><input type="number" value="2" /></td>
+          <td>R$80,00</td>
+        </tr>
+        <td>
+            <a href="#"><i class="far fa-times-circle"></i></a>
+          </td>
+          <td><img src="img/products/echeveria.png" alt="" /></td>
+          <td>Echeveria</td>
+          <td>R$38,70</td>
+          <td><input type="number" value="4" /></td>
+          <td>R$154,80</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="ad-carrinho" class="section-p1">
+        <div id="cupom">
+            <h3>Aplicar Cupom</h3>
+            <div>
+                <input type="text" placeholder="Digite seu cupom">
+                <button class="normal">Aplicar</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Valor Total</h3>
+            <table>
+                <tr>
+                    <td>Carrinho SubTotal</td>
+                    <td>R$132,70</td>
+                </tr>
+                <tr>
+                    <td>Entrega</td>
+                    <td>Grátis</td>
+            </tr>
+            <tr>
+                <td>Cupom</td>
+                <td>Não Aplicado</td>
+        </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>R$132,70</strong></td>
+            </tr>
+            </table>
+            <button class="normal">Prossiga para pagamento</button>
+        </div>
+
+    </section>
+
+    <footer class="section-p1">
+      <div class="col">
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="" /> </a>
+        <h4>Contatos</h4>
+        <p><strong>Endereço:</strong> Águas Claras 1827 Rua Avenida XXX</p>
+        <p><strong>Telefone:</strong> +55 61 9 1111-2222</p>
+        <p>
+          <strong>Horário de Atendimento:</strong> 9:30 - 18:30, Segunda-Sexta
+        </p>
+        <div class="follow">
+          <h4>Siga a gente</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h4>Sobre</h4>
+        <a href="sobre.html">Sobre Nós</a>
+        <a href="#">Informações de Entrega</a>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos e Condições de Uso</a>
+        <a href="#">Entre em contato</a>
+      </div>
+      <div class="col">
+        <h4>Minha conta</h4>
+        <a href="#">Sign in</a>
+        <a href="#">Ver carrinho</a>
+        <a href="#">Minha lista de desejos</a>
+        <a href="#">Acompanhar minhas compras</a>
+        <a href="#">Ajuda</a>
+      </div>
+      <div class="col install">
+        <h4>Instalar App</h4>
+        <p>App Store ou Google Play</p>
+        <div class="row">
+          <img src="img/pay/app.jpg" alt="" />
+          <img src="img/pay/play.jpg" alt="" />
+        </div>
+        <p>Formas de Pagamento</p>
+        <img src="img/pay/pay.png" alt="" />
+      </div>
+
+      <div class="copyright">
+        <p>© 2023, Wallace Felipe - Projeto de Front-End</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

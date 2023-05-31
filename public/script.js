@@ -4,6 +4,10 @@ const bar = document.getElementById("bar");
 const close = document.getElementById("close");
 const nav = document.getElementById("navbar");
 
+const signUpButton = document.getElementById("signUp");
+const signInButton = document.getElementById("signIn");
+const container = document.getElementById("container");
+
 if (bar) {
   bar.addEventListener("click", () => {
     nav.classList.add("active");
@@ -15,6 +19,16 @@ if (close) {
     nav.classList.remove("active");
   });
 }
+
+// BOTÃO DE LOGIN E SIGN IN
+
+signUpButton.addEventListener("click", () => {
+  container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener("click", () => {
+  container.classList.remove("right-panel-active");
+});
 
 /* Função de mudar de imagem na página de produto */
 
