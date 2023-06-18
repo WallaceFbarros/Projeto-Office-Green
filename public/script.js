@@ -47,3 +47,12 @@ smallImg[2].onclick = function () {
 smallImg[3].onclick = function () {
   mainImg.src = smallImg[3].src;
 };
+
+var closeButtons = document.querySelectorAll(".closeButton");
+
+closeButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    var tr = button.closest("tr");
+    tr.style.display = "none";
+  });
+});
